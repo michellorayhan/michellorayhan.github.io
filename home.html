@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home-style.css">
+</head>
+<body>
+    <header>
+        <img src="jenshinFolder/logo-jenshin.png" alt="logo-jenshin">
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Karakter</a></li>
+                <li><a href="peta.html">Peta</a></li>
+                <li><a href="info.html">Tentang Game</a></li>
+            </ul>
+        </nav>
+        <div class="daftar">Daftar</div>
+    </header>
+
+    <section>
+        <div class="home-1">
+            <a href="#" class="invokation"><img src="jenshinFolder/icon-genshin_invokation.png" alt="icon-genshin_invokation"></a>
+            <a href="#" class="play-video"><img src="jenshinFolder/icon-play_button.png" alt="icon-play_button"></a>
+            <h2>Telah Dirilis di Multi-Platform, Segera Unduh!</h2>
+            <div class="download-list">
+                <a href="#"><img src="jenshinFolder/icon-download-appstore.png" alt="icon-download-appstore"></a>
+                <a href="#"><img src="jenshinFolder/icon-download-googleplay.png" alt="icon-download-googleplay"></a>
+                <a href="#"><img src="jenshinFolder/icon-download-playstation.png" alt="icon-download-playstation"></a>
+                <a href="#"><img src="jenshinFolder/icon-download-windows.png" alt="icon-download-windows"></a>
+            </div>
+            <div class="penyambung"></div>
+        </div>
+        <div class="home-2">
+            <div class="berita">
+                <img src="jenshinFolder/pc-garis-2.png" alt="pc-garis-2" class="balik">
+                <h2>BERITA TERKINI</h2>
+                <img src="jenshinFolder/pc-garis-2.png" alt="pc-garis-2">
+            </div>
+            <div class="berita-container">
+                <div class="slides-berita">
+                    <div class="gambar">
+                        <img src="jenshinFolder/pc-news-dehya.png" alt="" id="pc-dehya">
+                        <img src="jenshinFolder/pc-news-senjata.png" alt="" id="pc-senjata">
+                    </div>
+                    <div class="tulisan">
+                        <div class="karakter" id="karakter">
+                            <h3>Dehya: Kobaran sang Singa</h3>
+                            <img src="jenshinFolder/pc-garis.png" alt="">
+                            <h5>Karakter baru Genshin Impact telah hadir!
+                                Dehya sang anggota Emirates arc Sumeru.
+                                Ayo lakukan Update 3.5 – Windblume’s Breath untuk mencoba 
+                                karakter Tank ini!</h5>
+                        </div>
+                        <div class="senjata" id="senjata">
+                            <h3>Hunter's Path</h3>
+                            <img src="jenshinFolder/pc-garis.png" alt="">
+                            <h5>Senjata yang satu ini akan didedikasikan khusus untuk 
+                                Tighnari sang karakter pengguna Bow.
+                                Statistik dasar yang dimiliki berkisar 44-542.</h5>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="button">
+                    <label id="bar-1" onclick="barFunction('karakter', 'pc-dehya', 'senjata', 'pc-senjata', 'bar-1', 'bar-2')" class="bar"></label>
+                    <label id="bar-2" onclick="barFunction('senjata', 'pc-senjata', 'karakter', 'pc-dehya', 'bar-2', 'bar-1')" class="bar"></label>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="sosial-media">
+            <img src="jenshinFolder/icon-discord.png" alt="icon-discord">
+            <img src="jenshinFolder/icon-facebook.png" alt="icon-facebook">
+            <img src="jenshinFolder/icon-instagram.png" alt="icon-instagram">
+            <img src="jenshinFolder/icon-reddit.png" alt="icon-reddit">
+            <img src="jenshinFolder/icon-twitter.png" alt="icon-twitter">
+            <img src="jenshinFolder/icon-youtube.png" alt="icon-youtube">
+        </div>
+        <div>
+            <div class="policy">
+                <h7>Kebijakan Privasi</h7>
+                <h7>Syarat Layanan</h7>
+                <h7>Tentang Kami</h7>
+                <h7>Hubungi Kami</h7>
+            </div>
+            <h7>"PlayStation Family Mark," "PS5 logo" and "PS4 logo" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.  Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks and/or registered trademarks of Epic Games. All other trademarks are the property of their respective owners.</h7>
+        </div>
+        <div class="logo-corporate">
+            <img src="jenshinFolder/logo-jenshin.png" alt="logo-jenshin">
+            <img src="jenshinFolder/logo-hoyoverse.png" alt="logo-hoyoverse">
+        </div>
+    </footer>
+
+    <script src="home-js.js"></script>
+</body>
+</html>

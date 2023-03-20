@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    width: 100vw;
+    height: 9vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header img{
+    margin-top: 4vh;
+}
+
+header nav{
+    display: flex;
+    width: 20vw;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10vw;
+}
+
+header nav a{
+    /* background-color: aqua; */
+    display: flex;
+    width: 4.5vw;
+    height: 9vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: red;
+}
+
+header nav a:hover{
+    background-color: white;
+}
+
+header .registrasi{
+    display: flex;
+    width: 10vw;
+    height: 9vh;
+    background-color: yellow;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+
+header .registrasi:hover{
+    background-color: white;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section .home-1{
+    background-image: url("jenshinFolder/bg-homepage-1.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#invokation{
+    margin-top: 9vh;
+    margin-left: auto;
+}
+
+#play-button{
+    margin-top: 35vh;
+    width: 75px;
+    height: 75px;
+    opacity: 0.6;
+}
+
+#play-button:hover{
+    opacity: 1;
+}
+
+.download-list img{
+    width: 150px;
+    height: 6vh;
+    padding: 0.5em;
+    /* background-color: aqua; */
+}
+
+.home-2{
+    background-image: url("jenshinFolder/bg-homepage-2.png");
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    background-color: rgba(42, 42, 42, 0.5);
+    height: 550px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.kotak{
+    background-color: rgba(53, 45, 45, 1);
+    width: 1000px;
+    height: 380px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.demo{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 444px;
+    height: 68px;
+    background-image: url("jenshinFolder/pc-news.png");
+    margin-bottom: 48vh;
+    margin-right: -25vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}

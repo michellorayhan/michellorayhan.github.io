@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Kumar+One&family=PT+Sans+Caption:wght@400;700&display=swap');
+
+body, html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-size: clamp(1.95rem, calc(1.81rem + 0.70vw), 2.44rem);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+h2{
+    font-size: clamp(1.56rem, calc(1.45rem + 0.56vw), 1.95rem);
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+}
+
+h3{
+    font-size: clamp(1.25rem, calc(1.16rem + 0.45vw), 1.56rem);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+h4{
+    font-size: clamp(1.00rem, calc(0.93rem + 0.36vw), 1.25rem);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+h5{
+    font-size: clamp(0.80rem, calc(0.74rem + 0.29vw), 1.00rem);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+h6{
+    font-size: clamp(0.64rem, calc(0.59rem + 0.23vw), 0.80rem);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+h7{
+    font-size: clamp(0.51rem, calc(0.48rem + 0.18vw), 0.64rem);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+header img{
+    margin-top: 4vh;
+}
+
+header nav{
+    text-align: center;
+}
+
+nav ul{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li{
+    display: flex;
+}
+
+nav a{
+    padding: 1.6em;
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+    font-size: clamp(0.80rem, calc(0.74rem + 0.29vw), 1.00rem);
+}
+
+header .daftar{
+    display: flex;
+    width: 15%;
+    height: 100%;
+    background-color: #FFCF25;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: clamp(1.25rem, calc(1.16rem + 0.45vw), 1.56rem);
+    color: rgba(0, 0, 0, 1);
+}
+
+header .daftar:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+}
+
+header nav a:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+}
+
+header{
+    position: fixed;
+    background-color:rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.balik{
+    transform: scaleX(-1);
+}
+
+section .map-teyvat h1{
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: clamp(3.82rem, calc(3.54rem + 1.36vw), 4.77rem);
+    color: white;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -15vh;
+}
+
+section .map-teyvat h4{
+    width: 75%;
+    color: white;
+    font-family: 'Inria Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+section .map-teyvat img{
+    margin-top: 10vh;
+}
+
+section .map-teyvat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("jenshinFolder/bg-map-1-teyvat.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 110vh;
+    text-align: center;
+    justify-content: center;
+}
+
+section .map-mondstadt .judul div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+section .map-mondstadt .judul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section .map-mondstadt h4{
+    width: 75%;
+}
+
+section .map-mondstadt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("jenshinFolder/bg-map-2-mondstat.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 120vh;
+    color: white;
+    justify-content: center;
+}
+
+section .map-liyue .judul div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+section .map-liyue .judul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section .map-liyue h4{
+    width: 75%;
+}
+
+section .map-liyue{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("jenshinFolder/bg-map-3-liyue.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 120vh;
+    justify-content: center;
+}
+
+section .map-inazuma .judul div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+section .map-inazuma .judul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section .map-inazuma h4{
+    width: 75%;
+}
+
+section .map-inazuma{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("jenshinFolder/bg-map-4-inazuma.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 120vh;
+    justify-content: center;
+}
+
+section .map-sumeru .judul div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+section .map-sumeru .judul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section .map-sumeru h4{
+    width: 75%;
+}
+
+section .map-sumeru{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("jenshinFolder/bg-map-5-sumeru.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 120vh;
+    justify-content: center;
+}
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Inria Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+footer .sosial-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
+footer div h7{
+    color: white;
+    text-align: center;
+}
+
+footer div .policy{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+
+footer div{
+    margin-top: 1vw;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+
+footer .logo-corporate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 44vh;
+}

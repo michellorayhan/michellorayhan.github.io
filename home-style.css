@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Kumar+One&display=swap');
+
+body, html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-size: clamp(1.95rem, calc(1.81rem + 0.70vw), 2.44rem);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+h2{
+    font-size: clamp(1.56rem, calc(1.45rem + 0.56vw), 1.95rem);
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+}
+
+h3{
+    font-size: clamp(1.25rem, calc(1.16rem + 0.45vw), 1.56rem);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+h4{
+    font-size: clamp(1.00rem, calc(0.93rem + 0.36vw), 1.25rem);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+h5{
+    font-size: clamp(0.80rem, calc(0.74rem + 0.29vw), 1.00rem);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+h6{
+    font-size: clamp(0.64rem, calc(0.59rem + 0.23vw), 0.80rem);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+h7{
+    font-size: clamp(0.51rem, calc(0.48rem + 0.18vw), 0.64rem);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+header img{
+    margin-top: 4vh;
+}
+
+header nav{
+    text-align: center;
+}
+
+nav ul{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li{
+    display: flex;
+}
+
+nav a{
+    padding: 1.6em;
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+    font-size: clamp(0.80rem, calc(0.74rem + 0.29vw), 1.00rem);
+}
+
+header .daftar{
+    display: flex;
+    width: 15%;
+    height: 100%;
+    background-color: #FFCF25;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: clamp(1.25rem, calc(1.16rem + 0.45vw), 1.56rem);
+    color: rgba(0, 0, 0, 1);
+}
+
+header .daftar:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+}
+
+header nav a:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+}
+
+header{
+    position: fixed;
+    background-color:rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+section .home-1 .invokation{
+    margin-top: 9vh;
+    margin-left: auto;
+}
+
+section .home-1 .play-video img{
+    margin-top: 30vh;
+    width: 100%;
+    height: 10vh;
+}
+
+section .home-1 .play-video img:hover{
+    opacity: 0.6;
+}
+
+section .home-1 h2{
+    color: white;
+}
+
+section .home-1 .download-list img{
+    width: 85%;
+    opacity: 0.6;
+}
+
+section .home-1 .download-list img:hover{
+    opacity: 1;
+}
+
+section .home-1 .download-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .home-1{
+    background-image: url("jenshinFolder/bg-homepage-1.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+section .home-1 .penyambung{
+    width: 100%;
+    height: 9%;
+    background-image: linear-gradient(to bottom, transparent, rgba(255,255,255, 1));
+}
+
+section .home-1::after{
+    content: '';
+    width: 100%;
+    height: 2%;   
+    background-color: white; 
+}
+
+section .home-2::before{
+    content: '';
+    width: 100%;
+    height: 6%;
+    background-image: linear-gradient(to top, transparent, rgba(255,255,255, 1)); 
+}
+
+section .home-2 .berita h2{
+    font-weight: 500;
+}
+
+section .home-2 .berita{
+    margin-top: -2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.balik{
+    transform: scaleX(-1);
+}
+
+.berita-container .inputan{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.berita-container h2{
+    font-weight: 600;
+}
+
+.berita-container h3{
+    font-weight: 500;
+    font-family: 'Kumar One',cursive;
+}
+
+.berita-container h5{
+    font-weight: 300;
+}
+
+/* #judul-kuning h3:first-child{
+    opacity: 0;
+    font-family: 'JetBrains Mono', monospace;
+    transition: 1s ease-in-out;
+    font-weight: 700;
+}
+
+#judul-kuning h3:last-child{
+    position: absolute;
+    font-family: 'JetBrains Mono', monospace;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    font-weight: 700;
+}
+
+#judul-kuning{
+    position: absolute;
+    width: 28vw;
+    height: 7.7vh;
+    background-image: url("jenshinFolder/pc-news.png");
+    background-size: cover;
+    margin-top: -29%;
+    margin-left: 30%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+} */
+
+#pc-dehya{
+    transform: scale(0.8);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#pc-senjata{
+    position: absolute;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slides-berita .gambar{ 
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.tulisan img{
+    margin-top: -8%;
+    width: 80%;
+}
+
+.tulisan h5{
+    width: 95%;
+}
+
+.tulisan .karakter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.tulisan .senjata{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slides-berita .tulisan{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+}
+
+.berita-container .slides-berita{
+    background-color: rgba(53, 45, 45, 1);
+    height: 80%;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+}
+
+section .home-2 .berita-container{
+    margin-top: 6vh;
+    width: 80%;
+    height: 66vh;
+    background-color: rgba(42, 42, 42, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button .bar{
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 2%;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.button{
+    display: flex;
+    width: 50%;
+    height: 7%;
+    justify-content: center;
+}
+
+section .home-2{
+    background-image:url("jenshinFolder/bg-homepage-2.png");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .sosial-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
+footer div h7{
+    color: white;
+    text-align: center;
+}
+
+footer div .policy{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+
+footer div{
+    margin-top: 1vw;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+
+footer .logo-corporate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 44vh;
+}
