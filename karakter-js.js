@@ -138,7 +138,7 @@ nilou.addEventListener("click", function(){
     if(nilou.style.opacity != 1){
         alhaitam.style.opacity = 0.6
         nilou.style.opacity = 1
-
+                
         pc_sumeru.setAttribute("src", "jenshinFolder/pc-char-sumeru-nilou.png")
     }
 })

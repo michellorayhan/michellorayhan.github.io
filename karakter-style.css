@@ -5,6 +5,11 @@ body, html{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }
 
 html{
@@ -47,31 +52,28 @@ h7{
     font-family: 'JetBrains Mono', monospace;
 }
 
-header img{
-    margin-top: 4vh;
-}
-
-header nav{
-    text-align: center;
-}
 
 nav ul{
-    display: flex;
-    margin: 0;
+    display: flex;    
     justify-content: center;
     align-items: center;
-}
-
-nav li{
-    display: flex;
+    height: 100%;
+    list-style: none;
+    padding: 0;
 }
 
 nav a{
-    padding: 1.6em;
+    padding: 1.45em;
     text-decoration: none;
     color:white;
     font-weight: 500;
     font-size: clamp(0.80rem, calc(0.74rem + 0.29vw), 1.00rem);
+    text-align: center;
+}
+
+.curr-nav{
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
 }
 
 header .daftar{
@@ -79,7 +81,6 @@ header .daftar{
     width: 15%;
     height: 100%;
     background-color: #FFCF25;
-    text-align: center;
     align-items: center;
     justify-content: center;
     font-weight: 500;
@@ -102,12 +103,13 @@ header nav a:hover{
 header{
     position: fixed;
     background-color:rgba(0, 0, 0, 0.6);
-    width: 100%;
+    width: 100vw;
     height: 9vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 999;
+    text-align: center;
 }
 
 .balik{
@@ -136,6 +138,13 @@ header{
     width: 100vw;
     height: 100vh;
     background-size: cover;
+
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
 }
 
 #mondstadt{
@@ -167,17 +176,18 @@ header{
 .content{
     cursor: pointer;
     background-color: black;
-    margin: 0 0.5em;
+    margin: 0 0.1em;
 }
 
 .container{
     display: flex;
     flex-direction: row;
-    margin-left: 7vw;    
+    margin-left: 7vw;
 }
 
 .slide-page .judul h1{
     padding: 0.3em;
+    text-align: center;
 }
 
 .slide-page .judul{
@@ -197,10 +207,15 @@ header{
     position: absolute;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
     text-align: center;
     color: white;
+
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
 }
 
 .page-2 .all-bg{
@@ -292,4 +307,149 @@ footer{
     background-color: black;
     width: 100%;
     height: 44vh;
+}
+
+@media screen and (max-width: 650px){
+    #nav-logo-jenshin{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 430px){
+    nav a{
+        padding: 1.6em;
+    }
+    header .daftar{
+        display: none;
+    }
+    header{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .page-1 h1{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 775px){
+    .page-1 h1{
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .page-1 h1{
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 485px){
+    .page-1 h1{
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 410px){
+    .page-1 h1{
+        width: 77vw;
+    }
+}
+
+@media screen and (max-width: 1350px){
+    .content{
+        transform: scale(0.75);
+    }
+
+    .container{
+        margin-top: -5vh;
+    }
+
+    .char-desc{
+        transform: scale(0.85);
+        right: 50px;
+    }
+}
+
+@media screen and (max-width: 1110px){
+    .content{
+        transform: scale(0.7);
+    }
+    .char-desc{
+        transform: scale(0.7);
+        right: -10px;
+    }
+}
+
+@media screen and (max-width: 1110px){
+    .content{
+        transform: scale(0.7);
+    }
+    .char-desc{
+        transform: scale(0.7);
+        right: -10px;
+    }
+}
+
+@media screen and (max-width: 980px){
+    .content{
+        transform: scale(0.7);
+        margin: 0 0;        
+    }
+
+    .char-desc{
+        transform: scale(0.6);
+        right: -50px;
+    }
+}
+
+@media screen and (max-width: 880px){
+    .content{
+        transform: scale(0.7);
+    }
+
+    .char-desc{
+        transform: scale(0.55);
+        right: -85px;
+    }
+}
+
+@media screen and (max-width: 840px){
+    .content{
+        transform: scale(0.65);
+        margin: 0;
+        padding: 0;
+    }
+
+    .char-desc{
+        transform: scale(0.45);
+        right: -120px;
+        top: 90px;
+    }
+}
+
+@media screen and (max-width: 745px){
+    .content{
+        transform: scale(0.6);
+    }
+
+    .container{
+        /* margin-top: -5vh; */
+    }
+
+    .char-desc{
+        transform: scale(0.35);
+        right: -160px;
+        top: 100px;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .char-desc{
+    }
+    .content{
+        margin: 0;
+        top: 0;
+    }
 }

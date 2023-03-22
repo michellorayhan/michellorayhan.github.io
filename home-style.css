@@ -5,6 +5,11 @@ body, html{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }
 
 html{
@@ -47,31 +52,28 @@ h7{
     font-family: 'JetBrains Mono', monospace;
 }
 
-header img{
-    margin-top: 4vh;
-}
-
-header nav{
-    text-align: center;
-}
 
 nav ul{
-    display: flex;
-    margin: 0;
+    display: flex;    
     justify-content: center;
     align-items: center;
-}
-
-nav li{
-    display: flex;
+    height: 100%;
+    list-style: none;
+    padding: 0;
 }
 
 nav a{
-    padding: 1.6em;
+    padding: 1.45em;
     text-decoration: none;
     color:white;
     font-weight: 500;
     font-size: clamp(0.80rem, calc(0.74rem + 0.29vw), 1.00rem);
+    text-align: center;
+}
+
+.curr-nav{
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
 }
 
 header .daftar{
@@ -79,7 +81,6 @@ header .daftar{
     width: 15%;
     height: 100%;
     background-color: #FFCF25;
-    text-align: center;
     align-items: center;
     justify-content: center;
     font-weight: 500;
@@ -102,12 +103,13 @@ header nav a:hover{
 header{
     position: fixed;
     background-color:rgba(0, 0, 0, 0.6);
-    width: 100%;
+    width: 100vw;
     height: 9vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 999;
+    text-align: center;
 }
 
 section .home-1 .invokation{
@@ -146,37 +148,25 @@ section .home-1 .download-list{
 
 section .home-1{
     background-image: url("jenshinFolder/bg-homepage-1.jpg");
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-size: cover;
     display: flex;
     align-items: center;
     flex-direction: column;
     color: white;
-}
 
-section .home-1 .penyambung{
-    width: 100%;
-    height: 9%;
-    background-image: linear-gradient(to bottom, transparent, rgba(255,255,255, 1));
-}
-
-section .home-1::after{
-    content: '';
-    width: 100%;
-    height: 2%;   
-    background-color: white; 
-}
-
-section .home-2::before{
-    content: '';
-    width: 100%;
-    height: 6%;
-    background-image: linear-gradient(to top, transparent, rgba(255,255,255, 1)); 
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
 }
 
 section .home-2 .berita h2{
     font-weight: 500;
+    padding: 1em;
 }
 
 section .home-2 .berita{
@@ -185,6 +175,7 @@ section .home-2 .berita{
     justify-content: center;
     align-items: center;
     color: white;
+    object-fit: scale-down;
 }
 
 .balik{
@@ -210,49 +201,12 @@ section .home-2 .berita{
     font-weight: 300;
 }
 
-/* #judul-kuning h3:first-child{
-    opacity: 0;
-    font-family: 'JetBrains Mono', monospace;
-    transition: 1s ease-in-out;
-    font-weight: 700;
-}
 
-#judul-kuning h3:last-child{
-    position: absolute;
-    font-family: 'JetBrains Mono', monospace;
-    opacity: 0;
-    transition: 1s ease-in-out;
-    font-weight: 700;
-}
-
-#judul-kuning{
-    position: absolute;
-    width: 28vw;
-    height: 7.7vh;
-    background-image: url("jenshinFolder/pc-news.png");
-    background-size: cover;
-    margin-top: -29%;
-    margin-left: 30%;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: white;
-} */
-
-#pc-dehya{
+#pc-char{
     transform: scale(0.8);
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: 1s ease-in-out;
 }
 
-#pc-senjata{
-    position: absolute;
-    transform: scale(0.8);
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
 
 .slides-berita .gambar{ 
     display: flex;
@@ -261,10 +215,10 @@ section .home-2 .berita{
     align-items: center;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 .tulisan img{
-    margin-top: -8%;
     width: 80%;
 }
 
@@ -310,7 +264,7 @@ section .home-2 .berita{
     width: 85%;
     display: flex;
     flex-direction: row;
-    margin-top: 2vh;
+    overflow: hidden;
 }
 
 section .home-2 .berita-container{
@@ -350,6 +304,13 @@ section .home-2{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
 }
 
 section{
@@ -409,4 +370,33 @@ footer{
     background-color: black;
     width: 100%;
     height: 44vh;
+}
+
+#pc-char{
+    object-fit: scale-down;
+}
+@media screen and (max-width: 650px){
+    #nav-logo-jenshin{
+        display: none;
+    }
+    .invokation{
+        transform: scale(0.8);
+    }
+    .tulisan{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 430px){
+    nav a{
+        padding: 1.6em;
+    }
+    header .daftar{
+        display: none;
+    }
+    header{
+        justify-content: center;
+    }
+    
 }

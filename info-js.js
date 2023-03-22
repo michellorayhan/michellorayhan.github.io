@@ -8,6 +8,10 @@ let cbutton_2 = document.getElementById('c-button-2')
 const slides = document.querySelectorAll('.slide')
 var counter = 0
 
+window.onload = function(){
+    counter_check()
+};
+
 bvideo_1.addEventListener("click", function(){
     bvideo_1.classList.add('active')
     bvideo_2.classList.remove('active')
@@ -42,6 +46,7 @@ cbutton_1.addEventListener("click", function(){
     if(counter>0){
         counter--
         slideImage()
+        counter_check()
     }    
 })
 
@@ -49,6 +54,7 @@ cbutton_2.addEventListener("click", function(){
     if(counter<3){
         counter++
         slideImage()
+        counter_check()
     }    
 })
 
@@ -58,6 +64,19 @@ const slideImage = () =>{
             slide.style.transform = `translateX(-${counter*100}%)`
         }
     )
+}
+
+function counter_check(){
+    if(counter>0 && counter<3){
+        cbutton_1.style.opacity = 1
+        cbutton_2.style.opacity = 1
+    }
+    if(counter==0){
+        cbutton_1.style.opacity = 0.1
+    }
+    if(counter==3){
+        cbutton_2.style.opacity = 0.1
+    }
 }
 
 

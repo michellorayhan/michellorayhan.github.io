@@ -9,10 +9,10 @@
 </head>
 <body>
     <header>
-        <img src="jenshinFolder/logo-jenshin.png" alt="logo-jenshin">
+        <img src="jenshinFolder/logo-jenshin.png" alt="logo-jenshin" id="nav-logo-jenshin">
         <nav>
             <ul>
-                <li><a href="#">Beranda</a></li>
+                <li><a href="#" class="curr-nav">Beranda</a></li>
                 <li><a href="karakter.html">Karakter</a></li>
                 <li><a href="peta.html">Peta</a></li>
                 <li><a href="info.html">Tentang Game</a></li>
@@ -32,7 +32,7 @@
                 <a href="#"><img src="jenshinFolder/icon-download-playstation.png" alt="icon-download-playstation"></a>
                 <a href="#"><img src="jenshinFolder/icon-download-windows.png" alt="icon-download-windows"></a>
             </div>
-            <div class="penyambung"></div>
+            <!-- <div class="penyambung"></div> -->
         </div>
         <div class="home-2">
             <div class="berita">
@@ -43,8 +43,7 @@
             <div class="berita-container">
                 <div class="slides-berita">
                     <div class="gambar">
-                        <img src="jenshinFolder/pc-news-dehya.png" alt="" id="pc-dehya">
-                        <img src="jenshinFolder/pc-news-senjata.png" alt="" id="pc-senjata">
+                        <img src="jenshinFolder/pc-news-dehya.png" alt="" id="pc-char">                        
                     </div>
                     <div class="tulisan">
                         <div class="karakter" id="karakter">
@@ -65,8 +64,8 @@
                     </div>                    
                 </div>
                 <div class="button">
-                    <label id="bar-1" onclick="barFunction('karakter', 'pc-dehya', 'senjata', 'pc-senjata', 'bar-1', 'bar-2')" class="bar"></label>
-                    <label id="bar-2" onclick="barFunction('senjata', 'pc-senjata', 'karakter', 'pc-dehya', 'bar-2', 'bar-1')" class="bar"></label>
+                    <label id="bar-1" class="bar"></label>
+                    <label id="bar-2" class="bar"></label>
                 </div>
             </div>
         </div>

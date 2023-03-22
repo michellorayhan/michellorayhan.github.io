@@ -5,6 +5,11 @@ body, html{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }
 
 html{
@@ -47,31 +52,28 @@ h7{
     font-family: 'JetBrains Mono', monospace;
 }
 
-header img{
-    margin-top: 4vh;
-}
-
-header nav{
-    text-align: center;
-}
 
 nav ul{
-    display: flex;
-    margin: 0;
+    display: flex;    
     justify-content: center;
     align-items: center;
-}
-
-nav li{
-    display: flex;
+    height: 100%;
+    list-style: none;
+    padding: 0;
 }
 
 nav a{
-    padding: 1.6em;
+    padding: 1.45em;
     text-decoration: none;
     color:white;
     font-weight: 500;
     font-size: clamp(0.80rem, calc(0.74rem + 0.29vw), 1.00rem);
+    text-align: center;
+}
+
+.curr-nav{
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
 }
 
 header .daftar{
@@ -79,7 +81,6 @@ header .daftar{
     width: 15%;
     height: 100%;
     background-color: #FFCF25;
-    text-align: center;
     align-items: center;
     justify-content: center;
     font-weight: 500;
@@ -102,12 +103,13 @@ header nav a:hover{
 header{
     position: fixed;
     background-color:rgba(0, 0, 0, 0.6);
-    width: 100%;
+    width: 100vw;
     height: 9vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 999;
+    text-align: center;
 }
 
 section .info-1 img{
@@ -118,7 +120,7 @@ section .info-1 h4{
     display: flex;
     color: white;
     text-align: center;
-    width: 55%;
+    width: 80%;
     background-color:rgba(0, 0, 0, 0.6);
     margin-top: 5vh;
 }
@@ -133,11 +135,19 @@ section .info-1{
     flex-direction: column;
     align-items: center;
     margin: 0;
+
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
 }
 
 section .info-2 .judul h2{
     font-weight: 500;
     color: white;
+    padding: 0.3em;
 }
 
 .balik{
@@ -149,6 +159,7 @@ section .info-2 .judul{
     justify-content: center;
     align-items: center;
     margin-top: 5vh;
+    text-align: center;
 }
  
 .fitur-1 img:last-child{
@@ -264,25 +275,45 @@ section .info-2 .judul{
     height: 500vh;
     position: relative;
     overflow-y: scroll;
+    overflow-x: hidden;
     scrollbar-width: none;
     scroll-behavior: smooth;
     background-color: rgba(0, 0, 0, 0.25);
 }
 
-.scroll-container::-webkit-scrollbar {
-    display: none;
+.scroll-container::-webkit-scrollbar{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.scroll-container::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.scroll-container::-webkit-scrollbar-button{
+    background-color: black;
+}
+
+.scroll-container::-webkit-scrollbar-corner{
+    background-color: black;
 }
 
 section .info-2{
     background-image: url("jenshinFolder/bg-info-2.png");
-    width: 100%;
-    height: 140vh;
+    width: 100vw;
+    height: 100dvh;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
 }
 
 section{
@@ -344,4 +375,162 @@ footer{
     background-color: black;
     width: 100%;
     height: 44vh;
+}
+
+
+@media screen and (max-width: 650px){
+    #nav-logo-jenshin{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 430px){
+    nav a{
+        padding: 1.6em;
+    }
+    header .daftar{
+        display: none;
+    }
+    header{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .fitur-game{
+        transform: scale(0.88);
+        margin-top: -20vh;
+    }
+    .video-game{
+        transform: scale(0.88);
+        margin-top: -20vh;
+    }
+    .cuplikan{
+        transform: scale(0.88);
+        margin-top: -10vh;
+    }
+}
+
+@media screen and (max-width: 1040px){
+    .fitur-game{
+        transform: scale(0.78);
+        margin-top: -38vh;
+    }
+    .video-game{
+        transform: scale(0.78);
+        margin-top: -50vh;
+    }
+    .cuplikan{
+        transform: scale(0.78);
+        margin-top: -20vh;
+    }
+}
+
+@media screen and (max-width: 970px){
+    .fitur-game{
+        transform: scale(0.65);
+        margin-top: -60vh;
+    }
+    .video-game{
+        transform: scale(0.65);
+        margin-top: -80vh;
+    }
+    .cuplikan{
+        transform: scale(0.65);
+        margin-top: -35vh;
+    }
+    .fitur-2{
+        margin-left: -5vw;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .fitur-game{
+        transform: scale(0.57);
+        margin-top: -75vh;
+    }
+    .video-game{
+        transform: scale(0.57);
+        margin-top: -95vh;
+    }
+    .cuplikan{
+        transform: scale(0.57);
+        margin-top: -40vh;
+    }
+}
+
+@media screen and (max-width: 775px){
+    .fitur-game{
+        transform: scale(0.45);
+        margin-top: -95vh;
+    }
+    .video-game{
+        transform: scale(0.45);
+        margin-top: -120vh;
+    }
+    .cuplikan{
+        transform: scale(0.45);
+        margin-top: -52vh;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .fitur-game{
+        transform: scale(0.5);
+        margin-top: -85vh;
+    }
+    .video-game{
+        transform: scale(0.5);
+        margin-top: -105vh;
+    }
+    .cuplikan{
+        transform: scale(0.5);
+        margin-top: -45vh;
+    }
+    .fitur-1{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .fitur-2{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .carouselkw{
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 520px){
+    .fitur-game{
+        transform: scale(0.4);
+        margin-top: -103vh;
+    }
+    .video-game{
+        transform: scale(0.4);
+        margin-top: -125vh;
+    }
+    .cuplikan{
+        transform: scale(0.4);
+        margin-top: -55vh;
+    }
+}
+
+@media screen and (max-width: 410px){
+    .fitur-game{
+        transform: scale(0.35);
+        margin-top: -110vh;
+    }
+    .video-game{
+        transform: scale(0.35);
+        margin-top: -135vh;
+    }
+    .cuplikan{
+        transform: scale(0.35);
+        margin-top: -60vh;
+    }
+
+
 }

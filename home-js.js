@@ -1,18 +1,28 @@
+let pc_char = document.getElementById('pc-char')
+let tulisan_karakter = document.getElementById('karakter')
+let tulisan_senjata = document.getElementById('senjata')
+
+let btn1 = document.getElementById('bar-1')
+let btn2 = document.getElementById('bar-2')
+
 window.onload = function(){
     document.getElementById("bar-1").click();
 };
 
-function barFunction(id, id2, id3, id4, id5, id6){
-    let obj = document.getElementById(id)
-    let obj2 = document.getElementById(id2)
-    let obj3 = document.getElementById(id3)
-    let obj4 = document.getElementById(id4)
-    let obj5 = document.getElementById(id5)
-    let obj6 = document.getElementById(id6)
-    obj.style.opacity = 1
-    obj2.style.opacity =1
-    obj3.style.opacity =0
-    obj4.style.opacity = 0
-    obj5.style.backgroundColor = "white"
-    obj6.style.backgroundColor = "transparent"
-}
+btn1.addEventListener("click", function(){
+    pc_char.setAttribute("src", "jenshinFolder/pc-news-dehya.png")
+    tulisan_karakter.style.opacity = 1
+    tulisan_senjata.style.opacity = 0
+
+    btn1.style.backgroundColor = "white"
+    btn2.style.backgroundColor = "transparent"
+})
+
+btn2.addEventListener("click", function(){
+    pc_char.setAttribute("src", "jenshinFolder/pc-news-senjata.png")
+    tulisan_karakter.style.opacity = 0
+    tulisan_senjata.style.opacity = 1
+
+    btn2.style.backgroundColor = "white"
+    btn1.style.backgroundColor = "transparent"
+})
