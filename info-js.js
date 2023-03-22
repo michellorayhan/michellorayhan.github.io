@@ -8,8 +8,6 @@ let cbutton_2 = document.getElementById('c-button-2')
 const slides = document.querySelectorAll('.slide')
 var counter = 0
 
-console.log(slides)
-
 bvideo_1.addEventListener("click", function(){
     bvideo_1.classList.add('active')
     bvideo_2.classList.remove('active')
