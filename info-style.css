@@ -369,7 +369,7 @@ footer .logo-corporate{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 30%;
+    width: 40%;
 }
 
 footer{
@@ -612,9 +612,15 @@ footer{
 
 @media screen and (max-width: 340px){
     footer div{
-        width: 90%;
+        width: 100%;
     }
     footer .sosial-media{
         width: 80%;
+    }
+    footer .logo-corporate{
+        transform: scale(0.5);
+    }
+    footer h7{
+        font-size: 8px;
     }
 }
