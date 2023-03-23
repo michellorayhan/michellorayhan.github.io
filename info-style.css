@@ -330,13 +330,18 @@ footer .sosial-media{
     justify-content: space-between;
     align-items: center;
     width: 40%;
-    margin-top: 5vh;
-    margin-bottom: 2vh;
+}
+
+.sosial-media img{
+    padding: 0.5em;
 }
 
 footer div h7{
     color: white;
     text-align: center;
+    padding: 0.5em;
+    display: flex;
+        
 }
 
 footer div .policy{
@@ -345,7 +350,7 @@ footer div .policy{
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 2vw;
+    margin-bottom: 2vh;
 }
 
 footer div{
@@ -370,7 +375,6 @@ footer .logo-corporate{
 footer{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     background-color: black;
     width: 100%;
@@ -393,6 +397,15 @@ footer{
     }
     header{
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 375px){
+    nav a{
+        padding: 1em;
+    }
+    .info-1 img{
+        transform: scale(0.8);
     }
 }
 
@@ -521,16 +534,86 @@ footer{
 @media screen and (max-width: 410px){
     .fitur-game{
         transform: scale(0.35);
-        margin-top: -110vh;
+        margin-top: -100vh;
     }
     .video-game{
         transform: scale(0.35);
-        margin-top: -135vh;
+        margin-top: -140vh;
     }
     .cuplikan{
         transform: scale(0.35);
+        margin-top: -50vh;
+    }
+
+}
+
+@media screen and (max-width: 360px){
+    .fitur-game{
+        transform: scale(0.3);
+        margin-top: -115vh;
+    }
+    .video-game{
+        transform: scale(0.3);
+        margin-top: -145vh;
+    }
+    .cuplikan{
+        transform: scale(0.3);
         margin-top: -60vh;
     }
 
+}
 
+@media screen and (max-width: 1064px){
+    footer div{
+        width: 70%;
+    }
+    footer .logo-corporate{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 760px){
+    footer div{
+        width: 80%;
+    }
+    footer .logo-corporate{
+        width: 70%;
+    }
+    footer .sosial-media{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 585px){
+    footer div{
+        width: 90%;
+    }
+    footer .logo-corporate{
+        width: 85%;
+    }
+    footer .sosial-media{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 445px){
+    footer div{
+        width: 100%;
+    }
+    footer .logo-corporate{
+        width: 120%;
+        transform: scale(0.7);    
+    }
+    footer .sosial-media{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 340px){
+    footer div{
+        width: 90%;
+    }
+    footer .sosial-media{
+        width: 80%;
+    }
 }

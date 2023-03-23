@@ -176,6 +176,7 @@ section .home-2 .berita{
     align-items: center;
     color: white;
     object-fit: scale-down;
+    text-align: center;
 }
 
 .balik{
@@ -325,13 +326,18 @@ footer .sosial-media{
     justify-content: space-between;
     align-items: center;
     width: 40%;
-    margin-top: 5vh;
-    margin-bottom: 2vh;
+}
+
+.sosial-media img{
+    padding: 0.5em;
 }
 
 footer div h7{
     color: white;
     text-align: center;
+    padding: 0.5em;
+    display: flex;
+        
 }
 
 footer div .policy{
@@ -340,7 +346,7 @@ footer div .policy{
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 2vw;
+    margin-bottom: 2vh;
 }
 
 footer div{
@@ -365,7 +371,6 @@ footer .logo-corporate{
 footer{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     background-color: black;
     width: 100%;
@@ -382,10 +387,15 @@ footer{
     .invokation{
         transform: scale(0.8);
     }
-    .tulisan{
-        display: none;
+    #pc-char{
+        object-fit: scale-down;
     }
-    
+}
+
+@media screen and (max-width: 540px){
+    .tulisan{
+        background-color: rgba(0, 0, 0, 0.4);
+    }
 }
 
 @media screen and (max-width: 430px){
@@ -397,6 +407,165 @@ footer{
     }
     header{
         justify-content: center;
+    }    
+}
+
+@media screen and (max-width: 375px){
+    nav a{
+        padding: 1em;
     }
-    
+    #pc-char{
+        transform: scale(0.5);
+    }
+    .tulisan h3{
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 1064px){
+    footer div{
+        width: 70%;
+    }
+    footer .logo-corporate{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 760px){
+    footer div{
+        width: 80%;
+    }
+    footer .logo-corporate{
+        width: 70%;
+    }
+    footer .sosial-media{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 585px){
+    footer div{
+        width: 90%;
+    }
+    footer .logo-corporate{
+        width: 85%;
+    }
+    footer .sosial-media{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 445px){
+    footer div{
+        width: 100%;
+    }
+    footer .logo-corporate{
+        width: 120%;
+        transform: scale(0.7);    
+    }
+    footer .sosial-media{
+        width: 70%;
+    }
+    .home-1 h2{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 340px){
+    footer div{
+        width: 90%;
+    }
+    footer .sosial-media{
+        width: 80%;
+    }
+}
+
+/* @media screen and (max-width: 895px){
+    .berita{
+        transform: scale(0.8);
+    }
+    .tulisan h5{
+        transform: scale(0.95);
+    }
+    .tulisan h3{
+        transform: scale(0.95);
+    }
+}
+
+@media screen and (max-width: 710px){
+    .berita{
+        transform: scale(0.7);
+    }
+    .tulisan h5{
+        transform: scale(0.9);
+    }
+    .tulisan h3{
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 615px){
+    .berita{
+        transform: scale(0.6);
+    }
+    .tulisan h5{
+        transform: scale(0.85);
+    }
+    .tulisan h3{
+        transform: scale(0.85);
+    }
+}
+
+@media screen and (max-width: 525px){
+    .berita{
+        transform: scale(0.5);
+    }
+    .tulisan h5{
+        transform: scale(0.85);
+    }
+    .tulisan h3{
+        transform: scale(0.85);
+    }
+}
+
+@media screen and (max-width: 435px){
+    .berita{
+        transform: scale(0.3);
+    }
+    .tulisan h5{
+        transform: scale(0.85);
+    }
+    .tulisan h3{
+        transform: scale(0.85);
+    }
+} */
+.tulisan{
+    object-fit: scale-down;
+}
+
+@media screen and (max-width: 620px){
+    .berita{
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 500px){
+    .berita{
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width: 400px){
+    .berita{
+        transform: scale(0.7);
+    }
+}
+
+@media screen and (max-width: 320px){
+    .tulisan h3{
+        font-size: clamp(1.00rem, calc(0.93rem + 0.36vw), 1.25rem);
+    }
+    .tulisan h5{
+        font-size: clamp(0.64rem, calc(0.59rem + 0.23vw), 0.80rem);
+    }
 }
