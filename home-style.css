@@ -113,9 +113,11 @@ header{
 }
 
 section .home-1 .invokation{
-    top: 9vh;
-    margin-left: auto;
-    position: relative;
+    top: 12vh;
+    right: 0;
+    /* margin-left: auto; */
+    position: absolute;
+    transform: scale(0.8);
 }
 
 section .home-1 .play-video img{    
@@ -179,13 +181,15 @@ section .home-2 .berita h2{
 }
 
 section .home-2 .berita{
-    margin-top: -2vh;
+    /* margin-top: -2vh; */
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     object-fit: scale-down;
     text-align: center;
+    position: absolute;
+    top: 0;
 }
 
 .balik{
@@ -278,7 +282,6 @@ section .home-2 .berita{
 }
 
 section .home-2 .berita-container{
-    margin-top: 6vh;
     width: 80%;
     height: 66vh;
     background-color: rgba(42, 42, 42, 0.5);
@@ -286,6 +289,9 @@ section .home-2 .berita-container{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    margin-top: 10vh;
 }
 
 .button .bar{
@@ -314,6 +320,8 @@ section .home-2{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    position: relative;
 
     background-repeat:no-repeat;
     -webkit-background-size:cover;
@@ -390,6 +398,17 @@ footer{
 #pc-char{
     object-fit: scale-down;
 }
+
+.tulisan h3{
+    padding: 0;
+    margin: 0;
+}
+
+.tulisan h5{
+    padding: 0;
+    margin: 0;
+}
+
 @media screen and (max-width: 650px){
     #nav-logo-jenshin{
         display: none;
@@ -406,6 +425,12 @@ footer{
     .tulisan{
         background-color: rgba(0, 0, 0, 0.4);
     }
+    .tulisan h3{
+        transform: scale(0.9);
+    }
+    .tulisan h5{
+        transform: scale(0.9);
+    }
 }
 
 @media screen and (max-width: 430px){
@@ -417,7 +442,16 @@ footer{
     }
     header{
         justify-content: center;
-    }    
+    }
+    .tulisan h3{
+        transform: scale(0.9);
+    }
+    .tulisan h5{
+        transform: scale(0.9);
+    }
+    .tulisan img{
+        transform: scale(1.3);
+    }
 }
 
 @media screen and (max-width: 375px){
@@ -429,6 +463,15 @@ footer{
     }
     .tulisan h3{
         transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 335px){
+    .tulisan h3{
+        transform: scale(0.76);
+    }
+    .tulisan h5{
+        transform: scale(0.76);
     }
 }
 
@@ -496,65 +539,6 @@ footer{
     }
 }
 
-/* @media screen and (max-width: 895px){
-    .berita{
-        transform: scale(0.8);
-    }
-    .tulisan h5{
-        transform: scale(0.95);
-    }
-    .tulisan h3{
-        transform: scale(0.95);
-    }
-}
-
-@media screen and (max-width: 710px){
-    .berita{
-        transform: scale(0.7);
-    }
-    .tulisan h5{
-        transform: scale(0.9);
-    }
-    .tulisan h3{
-        transform: scale(0.9);
-    }
-}
-
-@media screen and (max-width: 615px){
-    .berita{
-        transform: scale(0.6);
-    }
-    .tulisan h5{
-        transform: scale(0.85);
-    }
-    .tulisan h3{
-        transform: scale(0.85);
-    }
-}
-
-@media screen and (max-width: 525px){
-    .berita{
-        transform: scale(0.5);
-    }
-    .tulisan h5{
-        transform: scale(0.85);
-    }
-    .tulisan h3{
-        transform: scale(0.85);
-    }
-}
-
-@media screen and (max-width: 435px){
-    .berita{
-        transform: scale(0.3);
-    }
-    .tulisan h5{
-        transform: scale(0.85);
-    }
-    .tulisan h3{
-        transform: scale(0.85);
-    }
-} */
 .tulisan{
     object-fit: scale-down;
 }
@@ -577,11 +561,23 @@ footer{
     }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 325px){
     .tulisan h3{
-        font-size: clamp(1.00rem, calc(0.93rem + 0.36vw), 1.25rem);
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 317px){
+    .tulisan h3{
+        font-size: 16px;
     }
     .tulisan h5{
-        font-size: clamp(0.64rem, calc(0.59rem + 0.23vw), 0.80rem);
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 310px){
+    header nav a{
+        font-size: 12px;
     }
 }
