@@ -163,38 +163,84 @@ header{
     background-image: url("jenshinFolder/bg-char-5-sumeru.png");
 }
 
-.char-desc{
-    position: absolute;
-    right: 10vw;
-    top: 17vh;
+#btn-albedo{
+    background-image: url("jenshinFolder/icon-char-mondstadt-albedo-box.png");
 }
 
-.content img{
-    padding: 0.7em;
+#btn-jean{
+    background-image: url("jenshinFolder/icon-char-mondstadt-jean-box.png");
+}
+
+#btn-zhongli{
+    background-image: url("jenshinFolder/icon-char-liyue-zhongli-box.png");
+}
+
+#btn-ningguang{
+    background-image: url("jenshinFolder/icon-char-liyue-ningguang-box.png");
+}
+
+#btn-yaemiko{
+    background-image: url("jenshinFolder/icon-char-inazuma-yaemiko-box.png");
+}
+
+#btn-kazuha{
+    background-image: url("jenshinFolder/icon-char-inazuma-kazuha-box.png");
+}
+
+#btn-alhaitam{
+    background-image: url("jenshinFolder/icon-char-sumeru-alhaitam-box.png");
+}
+
+#btn-nilou{
+    background-image: url(jenshinFolder/icon-char-sumeru-nilou-box.png);
+}
+
+.group-row{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
 }
 
 .content{
-    cursor: pointer;
+    width: 135px;
+    height: 520px;
     background-color: black;
+    cursor: pointer;
     margin: 0 0.1em;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.container{
+.slide-page .container{
     display: flex;
     flex-direction: row;
-    margin-left: 7vw;
+    width: 290px;
+    height: 530px;
+    /* background-color: black;
+    border-radius: 1%; */
+    margin-right: 3vw;
 }
 
 .slide-page .judul h1{
-    padding: 0.3em;
+    margin: 0;
+    padding: 0.5em 0.2em;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 85%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .slide-page .judul{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    padding: 0;
+    margin: 0;
+    /* padding-bottom: 2em; */
 }
 
 
@@ -220,7 +266,7 @@ header{
 
 .page-2 .all-bg{
     width: 100vw;
-    height: 120vh;
+    height: 100dvh;
     position: relative;
     overflow: hidden;
     justify-content: center;
@@ -381,6 +427,71 @@ footer{
 }
 
 @media screen and (max-width: 1350px){
+    .group-row{
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 1075px){
+    .group-row{
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width: 975px){
+    .group-row{
+        transform: scale(0.7);
+    }
+}
+
+@media screen and (max-width: 870px){
+    .group-row{
+        transform: scale(0.6);
+    }
+}
+
+@media screen and (max-width: 765px){
+    .group-row{
+        transform: scale(0.5);
+    }
+}
+
+@media screen and (max-width: 660px){
+    .group-row{
+        flex-direction: column;
+    }
+    .group-row .container{
+        margin-top: 2vh;
+    }
+    .slide-page{
+        justify-content: center;
+        align-items: center;
+    }
+    .all-bg .judul{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 510px){
+    .group-row .char-desc{
+        transform: scale(0.9);
+    }
+    .btn{
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 435px){
+    .group-row .container{
+        margin: 0 2vw;
+        /* transform: scale(1.2); */
+    }
+    .group-row .char-desc{
+        transform: scale(0.8);
+    }
+}
+
+/* @media screen and (max-width: 1350px){
     .content{
         transform: scale(0.75);
     }
@@ -394,6 +505,7 @@ footer{
         right: 50px;
     }
 }
+
 
 @media screen and (max-width: 1110px){
     .content{
@@ -471,13 +583,16 @@ footer{
     }
     .slide-page{
         justify-content: center;
-        align-items: center;        
+        align-items: center;
     }
     .judul{
         display: none;
     }
+    section .page-2 .all-bg{
+        height: 100vh;
+    }
     .container{
-        margin-top: -52vh;
+        margin-top: -40vh;
         margin-left: auto;
         margin-right: auto;
     }
@@ -499,11 +614,12 @@ footer{
 @media screen and (max-width:375px){
     .char-desc{
         transform: scale(0.4);
+        margin-top: -10vh;
     }
     .container{
-        margin-top: -58vh;
+        margin-top: -45vh;
     }
-}
+} */
 
 @media screen and (max-width: 1064px){
     footer div{
