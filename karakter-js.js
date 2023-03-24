@@ -2,6 +2,7 @@ let pbutton_left = document.getElementById('btn-kiri')
 let pbutton_right = document.getElementById('btn-kanan')
 const slides = document.querySelectorAll('.slide-page')
 var counter = 0
+const pbutton_opacity = pbutton_right.style.opacity
 
 let albedo = document.getElementById('btn-albedo')
 let jean = document.getElementById('btn-jean')
@@ -36,8 +37,8 @@ slides.forEach(
 
 function counter_check(){
     if(counter>0 && counter<3){
-        pbutton_left.style.opacity = 1
-        pbutton_right.style.opacity = 1
+        pbutton_left.style.opacity = pbutton_opacity
+        pbutton_right.style.opacity = pbutton_opacity
     }
     if(counter==0){
         pbutton_left.style.opacity = 0.1
