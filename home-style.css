@@ -112,10 +112,13 @@ header{
     text-align: center;
 }
 
+#registrasi-mobile{
+    display: none;
+}
+
 section .home-1 .invokation{
     top: 12vh;
     right: 0;
-    /* margin-left: auto; */
     position: absolute;
     transform: scale(0.8);
 }
@@ -140,6 +143,7 @@ section .home-1 .play-video img:hover{
 
 section .home-1 h2{
     color: white;
+    text-align: center;
 }
 
 section .home-1 .download-list img{
@@ -430,7 +434,7 @@ footer{
     }
     .tulisan h5{
         transform: scale(0.9);
-    }
+    }    
 }
 
 @media screen and (max-width: 430px){
@@ -452,6 +456,13 @@ footer{
     .tulisan img{
         transform: scale(1.3);
     }
+    #registrasi-mobile{
+        display: unset;
+        position: absolute;
+        top: 9vh;
+        left: -24vw;
+        transform: scale(0.4);
+    }
 }
 
 @media screen and (max-width: 375px){
@@ -472,6 +483,16 @@ footer{
     }
     .tulisan h5{
         transform: scale(0.76);
+    }
+    section .home-1 .invokation img{
+        transform: scale(0.85);        
+    }
+    section .home-1 .invokation{
+        top: 8vh;
+        right: -7vw;
+    }
+    .home-1 .play-video{
+        transform: scale(0.9);
     }
 }
 

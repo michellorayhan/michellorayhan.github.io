@@ -609,27 +609,13 @@ footer{
     }
 }
 
-@media screen and (max-width: 775px){
-    /* .fitur-game{
-        transform: scale(0.45);
-        margin-top: -80vh;
-    }
-    .video-game{
-        transform: scale(0.45);
-        margin-top: -85vh;
-    }
-    .cuplikan{
-        transform: scale(0.45);
-        margin-top: -45vh;
-    } */
-    /* test */
+@media screen and (max-width: 800px){
     .scroll-container{
         display: none;
     }
     .grid{
         display: flex;
     }
-    /* test */
 }
 
 @media screen and (max-width: 635px){
