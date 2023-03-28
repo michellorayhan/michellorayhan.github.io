@@ -1,0 +1,176 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Yrsa:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&family=Open+Sans:wght@500&family=Yrsa:wght@300;400;500&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  font-size: clamp(1.95rem, calc(1.81rem + 0.70vw), 2.44rem);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+h2{
+  font-size: clamp(1.56rem, calc(1.45rem + 0.56vw), 1.95rem);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 400;
+}
+
+h3{
+  font-size: clamp(1.25rem, calc(1.16rem + 0.45vw), 1.56rem);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+h4{
+  font-size: clamp(1.00rem, calc(0.93rem + 0.36vw), 1.25rem);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+h5{
+  font-size: clamp(0.80rem, calc(0.74rem + 0.29vw), 1.00rem);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+h6{
+  font-size: clamp(0.64rem, calc(0.59rem + 0.23vw), 0.80rem);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+h7{
+  font-size: clamp(0.51rem, calc(0.48rem + 0.18vw), 0.64rem);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+
+section{
+  background-image: url("https://drive.google.com/uc?export=view&id=1zd53kYnR1AO8corh1Gk2Z0ol2KSekaSP");
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-size:cover;
+  align-items: center;
+  justify-content: center;
+}
+
+section .left{
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: blueviolet; */
+}
+
+section .left h4{
+  font-weight: 400;
+  color: white;
+  font-family: 'Yrsa', serif;
+  margin-bottom: 0%;
+}
+
+section .left h7{
+  color: white;
+  font-weight:300;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+section .right{
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e5e5ba;
+  width: 33vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+section .right h2{
+  color: #56A8DD;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:500;
+  text-align: center;
+  margin: 0%;
+}
+
+section .right h2::after{
+  content: '';
+  width: 25vw;
+  height: 0.8vh;
+  background-color: #4EA4DC;
+  /* position: absolute; */
+  display: block;
+}
+
+section .right .form{
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vw;
+}
+
+section .right .inputan input{
+  border-radius: 8px;
+  width: 22vw;
+  height: 5vh;
+  border: 1.5px solid azure;
+}
+
+section .right input[type="submit"]{
+  width: 22vw;
+  height: 5vh;
+  background-color: #4EA4DC;
+  border-radius: 3px;
+  border: 3px solid #4EA4DC;
+  font-family: 'Open Sans', sans-serif;
+  color: azure;
+}
+
+section .right a{
+  color: #60AADC;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+}
+
+section .right .form .divError{
+  /* visibility: hidden; */
+  margin: 0%;
+  color: red;
+  font-weight: 100;
+  font-family: 'Open Sans', sans-serif;
+}
+
+section .right .form .success input{
+  border-color: green;
+}
+
+section .right .form .error input{
+  border-color: red;
+  /* justify-self:center;
+  align-items: center; */
+  display: block;
+}
+
+
+@media screen and (max-width: 680px){
+  section .left img{
+    scale : 0.5;
+    margin-top: 5vh;
+  }
+  section .left h4{
+    margin-top: -3vh;
+  }
+  section .right .form .error input[type="email"]{
+    width: 95%;
+  }
+  section .right .form .error input[type="password"]{
+    width: 95%;
+  }
+
+}
