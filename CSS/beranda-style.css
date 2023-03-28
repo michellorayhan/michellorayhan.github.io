@@ -86,6 +86,7 @@ header .daftar{
     font-weight: 500;
     font-size: clamp(1.25rem, calc(1.16rem + 0.45vw), 1.56rem);
     color: rgba(0, 0, 0, 1);
+    text-decoration: none;
 }
 
 header .daftar:hover{

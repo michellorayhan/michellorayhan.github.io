@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Yrsa:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&family=Open+Sans:wght@500&family=Yrsa:wght@300;400;500&display=swap');
@@ -7,6 +6,7 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 h1{
@@ -45,7 +45,6 @@ h7{
   font-family: 'JetBrains Mono', monospace;
 }
 
-
 section{
   background-image: url("https://drive.google.com/uc?export=view&id=1zd53kYnR1AO8corh1Gk2Z0ol2KSekaSP");
   display: flex;
@@ -53,7 +52,30 @@ section{
   height: 100vh;
   background-size:cover;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+}
+
+#back h4{
+  color: white;
+  padding: 0.5em;
+  margin: 0;
+}
+
+#back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-bottom-right-radius: 30%;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 section .left{
@@ -157,14 +179,23 @@ section .right .form .error input{
   display: block;
 }
 
+section{
+  background-color: black;
+}
+
 
 @media screen and (max-width: 680px){
   section .left img{
-    scale : 0.5;
-    margin-top: 5vh;
+    transform: scale(0.9);
+    /* margin-top: 5vh; */
   }
   section .left h4{
-    margin-top: -3vh;
+    margin: 0;
+    padding: 0;
+  }
+  section .left h7{
+    margin: 0;
+    padding: 0;
   }
   section .right .form .error input[type="email"]{
     width: 95%;
@@ -172,5 +203,94 @@ section .right .form .error input{
   section .right .form .error input[type="password"]{
     width: 95%;
   }
+  section{
+    justify-content: space-evenly;
+  }
+}
 
+@media screen and (max-width: 530px){
+  section .left img{
+    transform: scale(0.7);
+  }
+}
+
+@media screen and (max-width: 415px){
+  section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section .left{
+    margin: 0;
+    padding: 0;
+  }
+  section .left img{
+    transform: scale(0.8);
+    margin: 0;
+    padding: 0;
+  }
+  section .left h4{
+    padding: 0;
+    margin: 0;
+    transform: scale(1.3);
+  }
+  section .left h7{
+    padding: 0;
+    margin: 0;
+    transform: scale(1.3);
+  }
+  section .right{
+    margin-top: -1vh;
+    margin-bottom: 10vh;
+    width: 85vw;
+    height: 40vh;
+  }
+  img{
+    transform: scale(1.3);
+  }
+  section .right h2{
+    font-size: 40px;
+  }
+  section .right h2::after{
+    width: 50vw;
+  }
+  section .right .inputan input{
+    width: 50vw;
+  }
+  section .right input[type="submit"]{
+    margin: 10px;
+    transform: scale(1.1);
+  }
+  section .right a{
+    font-size: 18px;
+  }
+  #buttonSubmit{
+    width: 70%;
+  }
+  #inputEmail{
+    width: 100%;
+  }
+  #inputPassword{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  section .left{
+    transform: scale(1);
+    width: 100vw;
+  }
+  section .left img{
+    transform: scale(0.8);
+  }
+  section .right h2{
+    font-size: 30px;
+  }
+  section .right a{
+    font-size: 15px;
+  }
+  section{
+    overflow: hidden;
+  }
 }

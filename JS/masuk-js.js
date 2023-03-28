@@ -1,13 +1,19 @@
-
 const inputEmail = document.getElementById('inputEmail')
 const inputPass = document.getElementById('inputPassword')
 const submitBtn = document.getElementById('buttonSubmit')
+
+let back = document.getElementById('back')
 let count = 0;
     
 
 submitBtn.addEventListener("click", (event)=>{event.preventDefault();
     checkInputs();
 });
+
+back.setAttribute("href", document.referrer);
+back.addEventListener('click', function(){
+    history.back();
+})
 
 const setError = (inputan, errorText) => {
     const formInputan = inputan.parentElement;

@@ -7,6 +7,7 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 h1{
@@ -52,11 +53,33 @@ section{
   width: 100vw;
   height: 100vh;
   background-size:cover;
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  /* background-position :center; */
+  background-position :center;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  background-color: black;
+
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+}
+
+#back h4{
+  color: white;
+  padding: 0.5em;
+  margin: 0;
+}
+
+#back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-bottom-right-radius: 30%;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 section .left{
@@ -78,7 +101,6 @@ section .left h4{
 }
 
 section .left h7{
-  
   color: white;
   font-weight:300;
   font-family: 'JetBrains Mono', monospace;
@@ -190,14 +212,18 @@ section .right .form .error input{
 
 @media screen and (max-width: 680px){
   section .left img{
-    scale : 0.5;
-    margin-top: 10vh;
+    transform: scale(0.9);
   }
   section .left h4{
-    margin-top: -2vh;
+    margin: 0;
+    padding: 0;
+  }
+  section .left h7{
+    margin: 0;
+    padding: 0;
   }
   #FAQCheckbox{
-    scale: 2;
+    scale: 1.4;
   }
   section .right .FAQ{
     width: 90%;
@@ -214,7 +240,100 @@ section .right .form .error input{
   section .right .form .error input[type="number"]{
     width: 95%;
   }
+  section{
+    justify-content: space-evenly;
+  }
+}
 
+@media screen and (max-width: 530px){
+  section .left img{
+    transform: scale(0.7);
+  }
+}
+
+@media screen and (max-width: 415px){
+  section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section .left{
+    margin: 0;
+    padding: 0;
+  }
+  section .left h4{
+    padding: 0;
+    margin: 0;
+    transform: scale(1.3);
+  }
+  section .left h7{
+    padding: 0;
+    margin: 0;
+    transform: scale(1.3);
+  }
+  section .right{
+    margin: 0;
+    width: 70vw;
+    height: 70vh;
+  }
+  section .left img{
+    transform: scale(0.8);
+    margin: 0;
+    padding: 0;
+  }
+  section .right h2{
+    font-size: 40px;
+  }
+  section .right h2::after{
+    margin-top: 1vh;
+    width: 50vw;
+  }
+  section .right .inputan input{
+    width: 50vw;
+  }
+  #FAQCheckbox{
+    scale: 2;
+  }
+  section .right .FAQ{
+    margin: 2vh;
+    transform: scale(1.3);
+    width: 70%;
+  }
+  section .right input[type="submit"]{
+    margin: 10px;
+    transform: scale(1.1);
+  }
+  section .right .form a{
+    font-size: 18px;
+  }
+  #buttonSubmit{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  section .left{
+    transform: scale(1);
+    width: 100vw;
+  }
+  section .left img{
+    transform: scale(0.8);
+  }
+  section .right{
+    height: 70vh;
+  }
+  section .right h2{
+    font-size: 30px;
+  }
+  section .right .form a{
+    font-size: 15px;
+  }
+  section{
+    height: 100vh;
+    overflow: hidden;
+  }
+  
 }
   
 
