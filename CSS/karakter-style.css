@@ -501,9 +501,9 @@ footer{
 }
 
 @media screen and (max-width: 510px){
-    .group-row .char-desc{
+    /* .group-row .char-desc{
         transform: scale(0.8);
-    }
+    } */
     .btn{
         top: 0;
     }
@@ -514,9 +514,9 @@ footer{
         transform: scale(0.9);
         margin: 0 2vw;
     }
-    .group-row .char-desc{
+    /* .group-row .char-desc{
         transform: scale(0.8);
-    }
+    } */
 }
 
 @media screen and (max-width: 390px){
