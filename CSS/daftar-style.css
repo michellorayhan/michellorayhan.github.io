@@ -7,7 +7,10 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 h1{
@@ -47,6 +50,52 @@ h7{
 }
 
 
+nav ul{
+  display: flex;    
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+nav a{
+  padding: 1.45em;
+  text-decoration: none;
+  color:white;
+  font-weight: 500;
+  font-size: clamp(0.80rem, calc(0.74rem + 0.29vw), 1.00rem);
+  text-align: center;
+}
+
+.curr-nav{
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+  height: 100%;
+}
+
+header nav a:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+  height: 100%;
+}
+
+header{
+  position: fixed;
+  background-color:rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+  text-align: center;
+}
+
+section .right .form a{
+  text-decoration: none;
+}
+
 section{
   background-image: url("https://drive.google.com/uc?export=view&id=1zd53kYnR1AO8corh1Gk2Z0ol2KSekaSP");
   display: flex;
@@ -66,22 +115,6 @@ section{
   background-size:cover;
 }
 
-#back h4{
-  color: white;
-  padding: 0.5em;
-  margin: 0;
-}
-
-#back{
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-bottom-right-radius: 30%;
-  cursor: pointer;
-  text-decoration: none;
-}
-
 section .left{
   display: flex;
   flex-direction: column;
@@ -90,7 +123,6 @@ section .left{
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* background-color: blueviolet; */
 }
 
 section .left h4{
@@ -208,6 +240,64 @@ section .right .form .success input{
 
 section .right .form .error input{
     border-color: red;
+}
+
+footer .sosial-media{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+
+.sosial-media img{
+  padding: 0.5em;
+}
+
+footer div h7{
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+  display: flex;
+      
+}
+
+footer div .policy{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+}
+
+footer div{
+  margin-top: 1vw;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2vh;
+}
+
+footer .logo-corporate{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  justify-content: center;
+  width: 100vw;
+  height: 44vh;
 }
 
 @media screen and (max-width: 680px){
@@ -331,9 +421,93 @@ section .right .form .error input{
   }
   section{
     height: 100vh;
-    overflow: hidden;
+    width: 100vw;
   }
-  
+}
+
+@media screen and (max-width: 650px){
+  #nav-logo-jenshin{
+      display: none;
+  }
+}
+
+@media screen and (max-width: 430px){
+  nav a{
+      padding: 1.6em;
+  }
+  header .daftar{
+      display: none;
+  }
+  header{
+      justify-content: center;
+  }
+}
+
+@media screen and (max-width: 375px){
+  nav a{
+      padding: 1em;
+  }    
+}
+
+@media screen and (max-width: 1064px){
+  footer div{
+      width: 70%;
+  }
+  footer .logo-corporate{
+      width: 60%;
+  }
+}
+
+@media screen and (max-width: 760px){
+  footer div{
+      width: 80%;
+  }
+  footer .logo-corporate{
+      width: 70%;
+  }
+  footer .sosial-media{
+      width: 50%;
+  }
+}
+
+@media screen and (max-width: 585px){
+  footer div{
+      width: 90%;
+  }
+  footer .logo-corporate{
+      width: 85%;
+  }
+  footer .sosial-media{
+      width: 60%;
+  }
+}
+
+@media screen and (max-width: 445px){
+  footer div{
+      width: 100%;
+  }
+  footer .logo-corporate{
+      width: 120%;
+      transform: scale(0.7);    
+  }
+  footer .sosial-media{
+      width: 70%;
+  }
+}
+
+@media screen and (max-width: 340px){
+  footer div{
+      width: 100%;
+  }
+  footer .sosial-media{
+      width: 80%;
+  }
+  footer .logo-corporate{
+      transform: scale(0.5);
+  }
+  footer h7{
+      font-size: 8px;
+  }
 }
   
 

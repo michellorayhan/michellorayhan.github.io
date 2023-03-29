@@ -5,17 +5,11 @@ const inputAge = document.getElementById('inputAge')
 const FAQCheckbox = document.getElementById('FAQCheckbox')
 const submitBtn = document.getElementById('buttonSubmit')
 
-let back = document.getElementById('back')
 let count = 0;  
 
 submitBtn.addEventListener("click", (event)=>{event.preventDefault();
-    checkInputs();
+    checkInputs()
 });
-
-back.setAttribute("href", document.referrer);
-back.addEventListener('click', function(){
-    history.back();
-})
 
 const setError = (inputan, errorText) => {
     const formInputan = inputan.parentElement;
@@ -45,10 +39,10 @@ const setSuccess = (inputan) => {
     const checkedFAQ = FAQCheckbox.checked
 
     //nameValidation
-    if(name === '' ){
+    if(name === ''){
         setError(inputName, "Nama tidak boleh kosong!");
     }
-    else if(!name.includes(' ')){
+    else if(!(name.trim().indexOf(" ") != -1)){
         setError(inputName, "Nama min. harus 2 kata!");
     }
     else{
