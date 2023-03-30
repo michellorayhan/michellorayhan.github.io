@@ -91,7 +91,7 @@ header{
 }
 
 section{
-  background-image: url("https://drive.google.com/uc?export=view&id=1zd53kYnR1AO8corh1Gk2Z0ol2KSekaSP");
+  background-image: url("../assets/bg-daftar.jpg");
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -131,7 +131,6 @@ section .left{
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* background-color: blueviolet; */
 }
 
 section .left h4{
@@ -175,7 +174,6 @@ section .right h2::after{
 }
 
 section .right .form{
-  /* background-color: aquamarine; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -219,8 +217,6 @@ section .right .form .success input{
 
 section .right .form .error input{
   border-color: red;
-  /* justify-self:center;
-  align-items: center; */
   display: block;
 }
 
@@ -294,7 +290,6 @@ footer{
 @media screen and (max-width: 680px){
   section .left img{
     transform: scale(0.9);
-    /* margin-top: 5vh; */
   }
   section .left h4{
     margin: 0;

@@ -237,7 +237,6 @@ section .info-2 .judul{
     width: 700px;
     position: relative;
     height: 420px;
-    /* margin-top: 7vh; */
     overflow: hidden;
 }
 
@@ -656,82 +655,6 @@ footer{
         opacity: 0.5;
     }
 }
-
-/* @media screen and (max-width: 660px){
-    .fitur-game{
-        transform: scale(0.5);
-        margin-top: -75vh;
-    }
-    .video-game{
-        transform: scale(0.5);
-        margin-top: -85vh;
-    }
-    .cuplikan{
-        transform: scale(0.5);
-        margin-top: -40vh;
-    }
-    .fitur-1{
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .fitur-2{
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
-
-@media screen and (max-width: 560px){
-    .carouselkw{
-        transform: scale(0.9);
-    }
-}
-
-@media screen and (max-width: 520px){
-    .fitur-game{
-        transform: scale(0.4);
-        margin-top: -85vh;
-    }
-    .video-game{
-        transform: scale(0.4);
-        margin-top: -100vh;
-    }
-    .cuplikan{
-        transform: scale(0.4);
-        margin-top: -48vh;
-    }
-}
-
-@media screen and (max-width: 410px){
-    .fitur-game{
-        transform: scale(0.35);
-        margin-top: -95vh;
-    }
-    .video-game{
-        transform: scale(0.35);
-        margin-top: -110vh;
-    }
-    .cuplikan{
-        transform: scale(0.35);
-        margin-top: -50vh;
-    }
-
-}
-
-@media screen and (max-width: 360px){
-    .fitur-game{
-        transform: scale(0.3);
-        margin-top: -100vh;
-    }
-    .video-game{
-        transform: scale(0.3);
-        margin-top: -120vh;
-    }
-    .cuplikan{
-        transform: scale(0.3);
-        margin-top: -55vh;
-    }
-
-} */
 
 @media screen and (max-width: 1064px){
     footer div{

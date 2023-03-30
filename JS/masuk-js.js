@@ -55,7 +55,7 @@ const setSuccess = (inputan) => {
     }
     
     //allValidationSuccessful
-    if(count == 2){
+    if(count >= 2){
         alert("Berhasil Masuk ke Akun Anda!")
         window.location = "../HTML/beranda.html"
     }   

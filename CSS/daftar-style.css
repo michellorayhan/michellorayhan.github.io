@@ -97,7 +97,7 @@ section .right .form a{
 }
 
 section{
-  background-image: url("https://drive.google.com/uc?export=view&id=1zd53kYnR1AO8corh1Gk2Z0ol2KSekaSP");
+  background-image: url("../assets/bg-daftar.jpg");
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -168,11 +168,9 @@ section .right h2::after{
 
 
 section .right .form{
-  /* background-color: aquamarine; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   gap: 1vw;
   margin-top: 2vh;
 }
@@ -190,7 +188,6 @@ section .right .FAQ{
   display:flex;
   flex-direction: column;
   width: 100%;
-  /* margin-left: -6vh; */
 }
 
 section .right .form input[type="checkbox"]{
@@ -411,7 +408,7 @@ footer{
     transform: scale(0.8);
   }
   section .right{
-    height: 70vh;
+    height: 75vh;
   }
   section .right h2{
     font-size: 30px;

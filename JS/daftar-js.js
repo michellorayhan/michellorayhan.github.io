@@ -91,7 +91,7 @@ const setSuccess = (inputan) => {
     }
 
     //allValidationSuccessful
-    if(count == 5){
+    if(count >= 5){
         alert("Berhasil! Akun Anda telah terdaftar!")
         window.location = "../HTML/beranda.html"
     }   
